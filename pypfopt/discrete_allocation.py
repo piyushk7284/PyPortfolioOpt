@@ -64,7 +64,7 @@ def portfolio(weights, latest_prices, min_allocation=0.01, total_portfolio_value
     )
     # Sort in descending order of weight
     nonzero_weights.sort(key=lambda x: x[1], reverse=True)
-    available_funds = total_portfolio_value
+    available_funds = 0.75*total_portfolio_value
     shares_bought = []
     buy_prices = []
 
